@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Piyush Gautam | Retro Portfolio</title>
+    <meta
+      name="description"
+      content="Retro desktop inspired portfolio for Piyush Gautam, UI/UX engineer and product designer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="desktop-shell">
+      <header class="topbar">
+        <div class="topbar__path">
+          <span class="topbar__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M4 5h16v14H4zM7 8h4M7 12h10M7 16h6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="square"
+              />
+            </svg>
+          </span>
+          <span>C:\USER\PORTFOLIO</span>
+        </div>
+        <nav class="topbar__nav" aria-label="Primary">
+          <button class="nav-chip is-active" data-target="home">Home</button>
+          <button class="nav-chip" data-target="works">Works</button>
+          <button class="nav-chip" data-target="about">About</button>
+          <button class="nav-chip" data-target="contact">Contact</button>
+        </nav>
+        <div class="topbar__actions" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+
+      <div class="workspace">
+        <aside class="sidebar window-frame">
+          <div class="sidebar__profile">
+            <div class="avatar-block avatar-block--photo">
+              <img src="./profile.png" alt="Portrait of Piyush Gautam" />
+            </div>
+            <div>
+              <h1>Piyush Gautam</h1>
+              <p>UI/UX Engineer v1.0</p>
+            </div>
+          </div>
+
+          <div class="sidebar__divider"></div>
+
+          <div class="sidebar__menu">
+            <button class="sidebar-link is-active" data-target="home">
+              <span>⌂</span>
+              <span>Home</span>
+            </button>
+            <button class="sidebar-link" data-target="works">
+              <span>▣</span>
+              <span>Works</span>
+            </button>
+            <button class="sidebar-link" data-target="about">
+              <span>◎</span>
+              <span>About</span>
+            </button>
+            <button class="sidebar-link" data-target="contact">
+              <span>@</span>
+              <span>Contact</span>
+            </button>
+          </div>
+
+          <div class="sidebar__footer">
+            <a href="mailto:piyushzgautam99@gmail.com">Launch Mail</a>
+            <a href="https://github.com/piyushzgautam99-ship-it" target="_blank" rel="noreferrer">
+              View Source
+            </a>
+          </div>
+        </aside>
+
+        <main class="screen-area">
+          <section class="screen is-active" id="home">
+            <div class="grid-layout grid-layout--home">
+              <article class="window-frame app-window hero-window">
+                <div class="titlebar">
+                  <span>C:\USER\HOME\welcome.exe</span>
+                  <div class="titlebar__buttons" aria-hidden="true">
+                    <span></span><span></span><span class="close"></span>
+                  </div>
+                </div>
+                <div class="hero-window__body">
+                  <div class="portrait-card">
+                    <div class="portrait-card__art">
+                      <img src="./profile.png" alt="Portrait of Piyush Gautam" />
+                      <div class="portrait-card__scan"></div>
+                    </div>
+                  </div>
+
+                  <div class="hero-copy">
+                    <p class="eyebrow">System Boot Complete</p>
+                    <h2>hi, i'm <span>Piyush Gautam</span></h2>
+                    <h3>UI/UX Engineer crafting bold, interactive product experiences.</h3>
+                    <p>
+                      I design interfaces with strong visual identity, intuitive flows, and
+                      modern interaction thinking. My work blends storytelling, usability, and
+                      clean execution across web and mobile.
+                    </p>
+                    <div class="hero-actions">
+                      <a class="action-button action-button--accent" href="./resume.pdf" target="_blank">
+                        Download Resume
+                      </a>
+                      <button class="action-button action-button--mint" data-target="works">
+                        Open Projects
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <aside class="window-frame app-window system-window">
+                <div class="titlebar titlebar--dark">
+                  <span>SYSTEM_INFO</span>
+                </div>
+                <div class="system-window__content">
+                  <div class="stat-row">
+                    <span>Focus</span>
+                    <strong>UI / UX</strong>
+                  </div>
+                  <div class="stat-row">
+                    <span>Creativity</span>
+                    <strong>98%</strong>
+                  </div>
+                  <div class="progress-block">
+                    <span>Prototype Speed</span>
+                    <div class="progress-bar"><i style="width: 92%"></i></div>
+                  </div>
+                  <div class="progress-block">
+                    <span>Visual Storytelling</span>
+                    <div class="progress-bar progress-bar--gold"><i style="width: 88%"></i></div>
+                  </div>
+                  <div class="shortcut-grid">
+                    <button class="folder-card" data-target="works">
+                      <span class="folder-icon folder-icon--gold"></span>
+                      <strong>Projects</strong>
+                    </button>
+                    <a class="folder-card" href="./resume.pdf" target="_blank">
+                      <span class="folder-icon folder-icon--mint"></span>
+                      <strong>Resume</strong>
+                    </a>
+                    <a
+                      class="folder-card"
+                      href="https://www.linkedin.com/in/piyush-gautam-970502395/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <span class="folder-icon folder-icon--peach"></span>
+                      <strong>LinkedIn</strong>
+                    </a>
+                    <button class="folder-card" data-target="contact">
+                      <span class="folder-icon folder-icon--cream"></span>
+                      <strong>Contact</strong>
+                    </button>
+                  </div>
+                </div>
+              </aside>
+
+              <article class="project-preview project-preview--olive">
+                <div class="project-preview__title">PROJECT_01.FIG</div>
+                <div class="project-preview__thumb preview-energy">
+                  <img src="./warrior-energy.png" alt="Warrior energy drink website preview" />
+                </div>
+                <div class="project-preview__body">
+                  <h4>Energy Drink Website UI</h4>
+                  <p>Parallax-driven landing experience with bold branding and responsive storytelling.</p>
+                </div>
+              </article>
+
+              <article class="project-preview project-preview--rust">
+                <div class="project-preview__title">PROJECT_02.APP</div>
+                <div class="project-preview__thumb preview-zomato">
+                  <img src="./coffee-brand.png" alt="Premium coffee brand identity showcase" />
+                </div>
+                <div class="project-preview__body">
+                  <h4>Premium Coffee Brand Identity</h4>
+                  <p>Complete brand identity across logo design, packaging visuals, product branding, and social media assets.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="screen" id="works">
+            <div class="grid-layout">
+              <article class="window-frame app-window filters-window">
+                <div class="titlebar titlebar--pale">
+                  <span>FILTERS.EXE</span>
+                </div>
+                <div class="filters-window__body">
+                  <div class="filter-group">
+                    <button class="filter-chip is-active" data-filter="all">All Files</button>
+                    <button class="filter-chip" data-filter="web">Web</button>
+                    <button class="filter-chip" data-filter="mobile">Mobile</button>
+                    <button class="filter-chip" data-filter="uiux">UI/UX</button>
+                  </div>
+                  <label class="search-box">
+                    <span>⌕</span>
+                    <input type="search" id="project-search" placeholder="Search disk..." />
+                  </label>
+                </div>
+              </article>
+
+              <article class="window-frame app-window works-window">
+                <div class="titlebar">
+                  <span>C:\USER\WORKS</span>
+                  <div class="titlebar__buttons" aria-hidden="true">
+                    <span></span><span></span><span class="close"></span>
+                  </div>
+                </div>
+                <div class="works-grid" id="works-grid">
+                  <article class="work-card" data-tags="web uiux figma branding responsive">
+                    <div class="work-card__visual work-card__visual--energy">
+                      <img src="./warrior-energy.png" alt="Warrior energy drink website design" />
+                    </div>
+                    <div class="work-card__content">
+                      <h3>ENERGY_DRINK_UI.FIG</h3>
+                      <p>
+                        Designed a high-energy website UI in Figma with parallax scenes, sharp
+                        typography, and scroll-led storytelling.
+                      </p>
+                      <div class="tag-row">
+                        <span>WEB</span>
+                        <span>FIGMA</span>
+                        <span>BRANDING</span>
+                      </div>
+                      <div class="work-card__actions">
+                        <a class="work-card__view" href="./warrior-energy.png" target="_blank" rel="noreferrer">
+                          View
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="work-card" data-tags="branding identity packaging social media">
+                    <div class="work-card__visual work-card__visual--food">
+                      <img src="./coffee-brand.png" alt="Coffee brand identity boards and packaging mockups" />
+                    </div>
+                    <div class="work-card__content">
+                      <h3>COFFEE_BRAND_IDENTITY.PSD</h3>
+                      <p>
+                        Designed a complete brand identity for a premium coffee brand, including
+                        logo creation, product branding, packaging visuals, and social media
+                        assets to deliver a cohesive professional brand experience.
+                      </p>
+                      <div class="tag-row">
+                        <span>BRANDING</span>
+                        <span>PACKAGING</span>
+                        <span>SOCIAL MEDIA</span>
+                      </div>
+                      <div class="work-card__actions">
+                        <a class="work-card__view" href="./coffee-brand.png" target="_blank" rel="noreferrer">
+                          View
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="work-card" data-tags="uiux hackathon collaboration prototype">
+                    <div class="work-card__visual work-card__visual--hack">
+                      <img src="./inout-hackathon.jpg" alt="INOUT Hacks 2026 grand finale event poster" />
+                    </div>
+                    <div class="work-card__content">
+                      <h3>INOUT_HACKATHON_2026.LOG</h3>
+                      <p>
+                        Designed UI/UX, wireframes, and user flows for a hackathon project while
+                        collaborating closely with the build team under time pressure.
+                      </p>
+                      <div class="tag-row">
+                        <span>HACKATHON</span>
+                        <span>UI/UX</span>
+                        <span>TEAMWORK</span>
+                      </div>
+                      <div class="work-card__actions">
+                        <a class="work-card__view" href="./inout-hackathon.jpg" target="_blank" rel="noreferrer">
+                          View
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+
+                  <article class="work-card" data-tags="saas dashboard analytics uiux realtime">
+                    <div class="work-card__visual work-card__visual--saas">
+                      <img src="./saas-dashboard.png" alt="Modern SaaS admin dashboard analytics interface" />
+                    </div>
+                    <div class="work-card__content">
+                      <h3>MODERN_SAAS_ADMIN_DASHBOARD.FIG</h3>
+                      <p>
+                        A dark-themed analytics dashboard designed to simplify business monitoring
+                        through intuitive data visualization, customer management, and real-time
+                        insights, with a focus on usability, scalability, and clean visual
+                        hierarchy.
+                      </p>
+                      <div class="tag-row">
+                        <span>SAAS</span>
+                        <span>ANALYTICS</span>
+                        <span>DASHBOARD</span>
+                      </div>
+                      <div class="work-card__actions">
+                        <a class="work-card__view" href="./saas-dashboard.png" target="_blank" rel="noreferrer">
+                          View
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="statusbar">
+                  <span id="work-count">4 ITEM(S)</span>
+                  <span>CREATIVE STORAGE: READY</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="screen" id="about">
+            <div class="grid-layout grid-layout--about">
+              <article class="window-frame app-window about-window">
+                <div class="titlebar titlebar--mint">
+                  <span>CURRICULUM_VITAE - C:\USER\RESUME.TXT</span>
+                  <div class="titlebar__buttons" aria-hidden="true">
+                    <span></span><span></span><span class="close"></span>
+                  </div>
+                </div>
+                <div class="about-window__body">
+                  <div class="identity-panel">
+                    <div class="identity-photo">
+                      <img src="./profile.png" alt="Portrait of Piyush Gautam" />
+                    </div>
+                    <h2>Piyush Gautam</h2>
+                    <h3>UI/UX Engineer</h3>
+                    <p>
+                      Computer Science student focused on visual systems, interaction design, and
+                      product thinking through Figma-led workflows.
+                    </p>
+
+                    <div class="contact-stack">
+                      <a href="tel:9555580183">9555580183</a>
+                      <a href="mailto:piyushzgautam99@gmail.com">piyushzgautam99@gmail.com</a>
+                      <a
+                        href="https://www.linkedin.com/in/piyush-gautam-970502395/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        LinkedIn Profile
+                      </a>
+                      <a href="https://github.com/piyushzgautam99-ship-it" target="_blank" rel="noreferrer">
+                        GitHub / piyushzgautam99-ship-it
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="resume-column">
+                    <article class="resume-panel resume-panel--wide">
+                      <h3>Experiences</h3>
+                      <div class="timeline-item">
+                        <div class="timeline-item__head">
+                          <h4>Event Volunteer / UI-UX Contributor</h4>
+                          <span>Apr 2026</span>
+                        </div>
+                        <strong>INOUT Hackathon 2026, Noida</strong>
+                        <p>
+                          Designed UI/UX for a hackathon project, created wireframes and prototypes,
+                          and collaborated with developers to shape a working solution on deadline.
+                        </p>
+                      </div>
+                      <div class="timeline-item">
+                        <div class="timeline-item__head">
+                          <h4>Independent Product Design Practice</h4>
+                          <span>2026</span>
+                        </div>
+                        <strong>Figma Concept Projects</strong>
+                        <p>
+                          Built concept interfaces for web and mobile, focusing on responsive design,
+                          modern branding, user flows, and interactive prototype behavior.
+                        </p>
+                      </div>
+                    </article>
+
+                    <article class="resume-panel">
+                      <h3>Technical Skills</h3>
+                      <div class="skill-meter">
+                        <span>Figma / UI Design</span>
+                        <div class="progress-bar"><i style="width: 94%"></i></div>
+                      </div>
+                      <div class="skill-meter">
+                        <span>Wireframing & Prototyping</span>
+                        <div class="progress-bar progress-bar--rust"><i style="width: 90%"></i></div>
+                      </div>
+                      <div class="skill-meter">
+                        <span>HTML / CSS</span>
+                        <div class="progress-bar progress-bar--gold"><i style="width: 78%"></i></div>
+                      </div>
+                      <div class="skill-meter">
+                        <span>Creative Tools</span>
+                        <div class="progress-bar progress-bar--mint"><i style="width: 86%"></i></div>
+                      </div>
+                      <p class="skill-note">
+                        Languages: C++, C, HTML, CSS. Tools: Git, GitHub, VS Code, Figma, Adobe
+                        Photoshop, Adobe Premiere Pro, Blender.
+                      </p>
+                    </article>
+
+                    <article class="resume-panel resume-panel--mint">
+                      <h3>Education</h3>
+                      <div class="education-item">
+                        <h4>JSS Academy of Technical Education, Noida</h4>
+                        <p>B.Tech in Computer Science and Engineering</p>
+                        <span>Aug 2025 - May 2029</span>
+                      </div>
+                      <div class="education-item">
+                        <h4>SKD Academy</h4>
+                        <p>Class XII</p>
+                      </div>
+                      <div class="education-item">
+                        <h4>Saint John Vianney School</h4>
+                        <p>Class X</p>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="screen" id="contact">
+            <div class="grid-layout grid-layout--contact">
+              <article class="window-frame app-window contact-window">
+                <div class="titlebar titlebar--rust">
+                  <span>C:\USER\CONTACT\message.sys</span>
+                  <div class="titlebar__buttons" aria-hidden="true">
+                    <span></span><span></span><span class="close"></span>
+                  </div>
+                </div>
+                <div class="contact-window__body">
+                  <div class="contact-copy">
+                    <p class="eyebrow">Transmission Channel Open</p>
+                    <h2>Let's build something people remember.</h2>
+                    <p>
+                      If you need product visuals, UI systems, prototypes, or a designer who cares
+                      about how the experience feels and functions, I’d love to collaborate.
+                    </p>
+                  </div>
+
+                  <div class="contact-cards">
+                    <a class="contact-card" href="mailto:piyushzgautam99@gmail.com">
+                      <span>Email</span>
+                      <strong>piyushzgautam99@gmail.com</strong>
+                    </a>
+                    <a class="contact-card" href="tel:9555580183">
+                      <span>Phone</span>
+                      <strong>+91 9555580183</strong>
+                    </a>
+                    <a
+                      class="contact-card"
+                      href="https://www.linkedin.com/in/piyush-gautam-970502395/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <span>LinkedIn</span>
+                      <strong>/in/piyush-gautam-970502395</strong>
+                    </a>
+                    <a
+                      class="contact-card"
+                      href="https://github.com/piyushzgautam99-ship-it"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <span>GitHub</span>
+                      <strong>piyushzgautam99-ship-it</strong>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
